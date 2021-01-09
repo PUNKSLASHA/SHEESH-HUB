@@ -1,0 +1,106 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Anims = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Top = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local NETBypass = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local FEAnim = Instance.new("TextButton")
+
+--Properties:
+
+Anims.Name = "Anims"
+Anims.Parent = game.CoreGui
+Anims.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = Anims
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Main.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Main.Position = UDim2.new(0.20374012, 0, -0.000144600868, 0)
+Main.Size = UDim2.new(0, 197, 0, 176)
+Main.Draggabled = true
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(90, 0, 255)
+Top.BorderColor3 = Color3.fromRGB(90, 0, 255)
+Top.Position = UDim2.new(0, 0, 0.00217384659, 0)
+Top.Size = UDim2.new(0, 197, 0, 47)
+
+TextLabel.Parent = Top
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, -0.00813975278, 0)
+TextLabel.Size = UDim2.new(0, 197, 0, 47)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "FE Anims"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Top
+TextButton.BackgroundColor3 = Color3.fromRGB(90, 0, 255)
+TextButton.BorderColor3 = Color3.fromRGB(90, 0, 255)
+TextButton.Position = UDim2.new(0.00118700974, 0, 3.78385115, 0)
+TextButton.Size = UDim2.new(0, 197, 0, 49)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Click To Disable Gui"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	Main.Visible = false
+end)
+
+NETBypass.Name = "NET Bypass"
+NETBypass.Parent = Main
+NETBypass.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NETBypass.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NETBypass.Position = UDim2.new(0.030456854, 0, 0.3125, 0)
+NETBypass.Size = UDim2.new(0, 185, 0, 30)
+NETBypass.Font = Enum.Font.SourceSans
+NETBypass.Text = "NET Bypass"
+NETBypass.TextColor3 = Color3.fromRGB(255, 255, 255)
+NETBypass.TextScaled = true
+NETBypass.TextSize = 14.000
+NETBypass.TextWrapped = true
+NETBypass.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/XTmMzATJ'),true))()
+end)
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.742007971, 0)
+TextLabel_2.Size = UDim2.new(0, 197, 0, 22)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "NOTE: Click \"NET Bypass\" before clicking \"FE Anim\""
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+FEAnim.Name = "FE Anim"
+FEAnim.Parent = Main
+FEAnim.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FEAnim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FEAnim.Position = UDim2.new(0.030456854, 0, 0.528409064, 0)
+FEAnim.Size = UDim2.new(0, 185, 0, 30)
+FEAnim.Font = Enum.Font.SourceSans
+FEAnim.Text = "FE Anim"
+FEAnim.TextColor3 = Color3.fromRGB(255, 255, 255)
+FEAnim.TextScaled = true
+FEAnim.TextSize = 14.000
+FEAnim.TextWrapped = true
+FEAnim.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/PUNKSLASHA/SHEESH-HUB/main/Anims'),true))()
+end)
